@@ -75,7 +75,7 @@ When the trial ends, [purchase a lifetime licence](https://multidigitaltools.com
 3. Launch GSTBillPro. On first run it guides you to connect to SQL Server and create your company database automatically.
 4. Activate with your **trial** or **full** licence key.
 
-📘 **Full step-by-step guide:** [docs/USER_GUIDE.md](docs/USER_GUIDE.md) · online docs: https://multidigitaltools.com/products/gstbill/docs
+📘 **Install guide:** [docs/INSTALL.md](docs/INSTALL.md) · **Full user guide:** [docs/USER_GUIDE.md](docs/USER_GUIDE.md) · online docs: https://multidigitaltools.com/products/gstbill/docs
 
 ---
 
