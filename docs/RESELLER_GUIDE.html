@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GSTBillPro — Reseller &amp; White-Label Tutorial</title>
+<style>
+ :root{--blue:#1565C0;--blue-d:#0D47A1;--accent:#FF6F00;--ink:#212529;--muted:#5a6470;--bg:#f7f9fc;--card:#fff;--line:#e3e8ef}
+ *{box-sizing:border-box} body{margin:0;font-family:"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
+ .wrap{max-width:960px;margin:0 auto;padding:0 22px}
+ .cover{background:linear-gradient(135deg,var(--blue-d),var(--blue));color:#fff;padding:50px 22px;text-align:center}
+ .cover h1{font-size:36px;margin:14px 0 6px;font-weight:800}.cover p{font-size:16px;opacity:.95;margin:3px 0}
+ .badge{display:inline-block;margin-top:14px;background:var(--accent);color:#fff;padding:7px 16px;border-radius:30px;font-weight:700;font-size:13px}
+ .flow{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:24px 0}
+ .flow .b{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:9px 13px;font-weight:700;color:var(--blue-d);font-size:13px;text-align:center}
+ .flow .a{align-self:center;color:var(--accent);font-weight:800;font-size:18px}
+ h2.s{color:var(--blue-d);border-bottom:3px solid var(--accent);padding-bottom:6px;margin:40px 0 8px;font-size:23px}
+ .step{background:var(--card);border:1px solid var(--line);border-radius:16px;margin:24px 0;overflow:hidden;box-shadow:0 3px 14px rgba(20,40,80,.06)}
+ .sh{display:flex;align-items:center;gap:14px;padding:15px 22px;background:linear-gradient(90deg,#eef4ff,#fff);border-bottom:1px solid var(--line)}
+ .num{width:40px;height:40px;border-radius:50%;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;flex:0 0 auto}
+ .sh h3{margin:0;font-size:19px;color:var(--blue-d)} .sb{padding:18px 22px}
+ img.shot{display:block;width:100%;border:1px solid var(--line);border-radius:10px;margin:6px 0 12px;box-shadow:0 4px 16px rgba(0,0,0,.1)}
+ .cap{font-size:13px;color:var(--muted);text-align:center;margin:-6px 0 12px;font-style:italic}
+ ul{margin:8px 0;padding-left:20px} li{margin:5px 0}
+ .tip{border-left:4px solid var(--accent);background:#fff8f0;padding:11px 15px;border-radius:0 8px 8px 0;margin:12px 0}.tip b{color:var(--accent)}
+ .key{display:inline-block;background:#eef1f5;border:1px solid #cdd5df;border-radius:6px;padding:1px 8px;font-weight:700;font-size:13px;font-family:monospace}
+ footer{background:var(--blue-d);color:#fff;text-align:center;padding:24px;margin-top:36px}footer a{color:#ffd9b3}
+</style></head><body>
+<div class="cover">
+  <img src="screenshots/logo.png" alt="GSTBillPro" style="max-width:300px;width:70%">
+  <h1>Reseller &amp; White-Label Tutorial</h1>
+  <p>Resell GSTBillPro under your own brand — full step-by-step with screenshots</p>
+  <div class="badge">For Resellers &amp; Partners — v6.0</div>
+</div>
+<div class="wrap">
+  <h2 class="s">How it works</h2>
+  <div class="flow">
+    <div class="b">Multi Digital Tools<br><small>issues you an RK key</small></div><div class="a">→</div>
+    <div class="b">You (Reseller)<br><small>activate, set branding,<br>generate EK keys</small></div><div class="a">→</div>
+    <div class="b">Your Customer<br><small>installs your-branded app,<br>activates with an EK key</small></div>
+  </div>
+  <ul>
+    <li><b>Reseller Key (RK-…)</b> — unlocks your Reseller Tool; sets your key quota &amp; expiry.</li>
+    <li><b>End-User Key (EK-…)</b> — you generate these for customers (up to quota); hardware-lock &amp; expiry optional.</li>
+    <li><b>branding.dat</b> — your product name, logo, colours &amp; trial; ship beside the app, no recompiling.</li>
+  </ul>
+
+  <h2 class="s">Part A — Vendor issues your Reseller Key</h2>
+  <div class="step"><div class="sh"><div class="num">1</div><h3>Open the Master Key Generator</h3></div><div class="sb">
+    <p>Multi Digital Tools runs <b>MasterKeyGen.exe</b> (kept private). It opens on the <b>Issue Reseller Key</b> tab.</p>
+    <img class="shot" src="screenshots/rt_01_keygen_open.png"><div class="cap">Master Key Generator — Issue Reseller Key tab</div></div></div>
+  <div class="step"><div class="sh"><div class="num">2</div><h3>Enter reseller name, seat quota &amp; expiry</h3></div><div class="sb">
+    <p>Type the reseller's name, set the <b>seat quota</b> (how many end-user keys they can create) and the licence <b>expiry</b>. A Reseller ID is auto-generated.</p>
+    <img class="shot" src="screenshots/rt_02_keygen_filled.png"><div class="cap">Name "Acme Software Solutions", quota 100, expiry set</div></div></div>
+  <div class="step"><div class="sh"><div class="num">3</div><h3>Generate the RK key</h3></div><div class="sb">
+    <p>Click <b>Generate RK Key</b>; copy it and send it to the reseller.</p>
+    <img class="shot" src="screenshots/rt_03_keygen_issued.png"><div class="cap">Key issued — e.g. RK-HWID1M-0100-… (0100 = 100-key quota)</div>
+    <div class="tip"><b>You send the reseller</b> the <span class="key">RK-…</span> key only. The Master Key Generator stays private with Multi Digital Tools.</div></div></div>
+
+  <h2 class="s">Part B — Reseller sets up their brand</h2>
+  <div class="step"><div class="sh"><div class="num">4</div><h3>Open the Reseller Tool</h3></div><div class="sb">
+    <p>The reseller runs <b>ResellerTool.exe</b> — five tabs: Activation, Branding, Key Generator, Package Builder, Quota.</p>
+    <img class="shot" src="screenshots/rt_04_tool_open.png"><div class="cap">Reseller Tool — Activation tab (other tabs lock until activated)</div></div></div>
+  <div class="step"><div class="sh"><div class="num">5</div><h3>Enter the Reseller Key</h3></div><div class="sb">
+    <p>Paste the RK key into <b>Enter Reseller Key</b>.</p>
+    <img class="shot" src="screenshots/rt_05_key_entered.png"><div class="cap">Reseller key pasted, ready to activate</div></div></div>
+  <div class="step"><div class="sh"><div class="num">6</div><h3>Click Activate</h3></div><div class="sb">
+    <p>A confirmation shows your Reseller ID, key quota and expiry; the status turns green.</p>
+    <img class="shot" src="screenshots/rt_06_activated_dialog.png"><div class="cap">Activation success — ID, quota and expiry confirmed</div>
+    <img class="shot" src="screenshots/rt_07_activated.png"><div class="cap">ACTIVATED — quota remaining shown in green; other tabs unlock</div></div></div>
+  <div class="step"><div class="sh"><div class="num">7</div><h3>Set your white-label branding</h3></div><div class="sb">
+    <p>On the <b>Branding</b> tab enter <b>your</b> product name, company, support email/phone, website, trial days and logo, then click <b>Save branding.dat</b>.</p>
+    <img class="shot" src="screenshots/rt_08_branding.png"><div class="cap">White-label branding — here rebranded as "QuickBooks Lite" by "Acme Software Solutions"</div>
+    <div class="tip"><b>Result:</b> a <span class="key">branding.dat</span> file — drop it next to the EXE and the app runs fully under your brand.</div></div></div>
+
+  <h2 class="s">Part C — Reseller serves customers</h2>
+  <div class="step"><div class="sh"><div class="num">8</div><h3>Generate End-User Keys</h3></div><div class="sb">
+    <p>On the <b>Key Generator</b> tab set an expiry, optionally tick <b>Hardware Lock</b>, and click <b>Generate Key</b> (each click uses one quota seat). Give one EK key to each customer.</p>
+    <img class="shot" src="screenshots/rt_09_userkeys.png"><div class="cap">Key Generator — EK-… keys created; quota tracked; Export to CSV</div></div></div>
+  <div class="step"><div class="sh"><div class="num">9</div><h3>Build the distribution package</h3></div><div class="sb">
+    <p>On the <b>Package Builder</b> tab pick the base EXE + output folder and click <b>Build Package</b> to assemble a your-branded, ready-to-ship folder (EXE + branding.dat + README).</p>
+    <img class="shot" src="screenshots/rt_10_package.png"><div class="cap">Package Builder — branded, ready-to-distribute folder</div></div></div>
+  <div class="step"><div class="sh"><div class="num">10</div><h3>Track your quota</h3></div><div class="sb">
+    <p>The <b>Quota</b> tab shows keys used / remaining and your licence expiry any time.</p>
+    <img class="shot" src="screenshots/rt_11_quota.png"><div class="cap">Quota — used, remaining and expiry</div></div></div>
+
+  <h2 class="s">Good to know</h2>
+  <ul>
+    <li>Your quota is enforced — once exhausted, contact Multi Digital Tools to top up.</li>
+    <li>No Visual Studio or recompiling — branding is data-driven (branding.dat).</li>
+    <li>Reports need the Crystal Reports runtime — bundle it + the .rpt files in your installer.</li>
+    <li>The Master Key Generator stays private with the vendor; never ship it.</li>
+  </ul>
+</div>
+<footer><b>GSTBillPro</b> Reseller &amp; White-Label Tutorial — by Multi Digital Tools<br>
+<a href="https://multidigitaltools.com/products/gstbill">multidigitaltools.com/products/gstbill</a> • support@multidigitaltools.com</footer>
+</body></html>

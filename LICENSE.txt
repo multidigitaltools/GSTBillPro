@@ -1,0 +1,12 @@
+GSTBillPro — Proprietary Software Licence
+Copyright (c) 2026 Multi Digital Tools. All rights reserved.
+
+This software is proprietary and is licensed, not sold. Use is governed by the
+licence you purchase (14-day trial, lifetime full licence, or white-label
+reseller licence) from https://multidigitaltools.com.
+
+You may NOT redistribute, reverse-engineer, or resell this software except under
+a valid reseller (white-label) licence. The installer and binaries are provided
+for evaluation (trial) and licensed use only.
+
+Support: support@multidigitaltools.com
